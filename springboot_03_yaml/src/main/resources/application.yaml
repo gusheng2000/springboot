@@ -1,0 +1,29 @@
+country: china
+
+user:
+    name: baby
+    age: 12
+
+user2:
+    name: safas
+    age: 356
+user3:
+    name: mami
+    age: 100
+
+baseDir: c:windows
+#使用￥{属性名}引用数据
+#tempDir: ${basedir}\temp
+
+#使用双引号{包裹的字符串，其中的转义字符可以生效
+tempDir: "${basedir}\temp \t1 \t2 \t3 "
+
+
+#创建类，用于封装下面的数据
+#让spring 帮我们去加载到对象中，一定要告诉spring加载这组信息
+#使用spring获得数据
+datasource:
+    driver: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/springboot_db
+    username: root
+    password: root
